@@ -1,0 +1,30 @@
+{
+	"name": "asp (html)",
+	"displayName": "asp (html)",
+	"description": "This extension provides language support for Classic ASP.",
+	"version": "0.0.1",
+	"publisher": "tron",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages",
+        "Snippets"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "asp (html)",
+			"aliases": ["HTML (ASP)", "asp (html)"],
+			"extensions": [".asp", ".asa", ".inc"]
+		}],
+		"grammars": [{
+			"language": "asp (html)",
+			"scopeName": "text.html.asp",
+			"path": "./syntaxes/asp (html).tmLanguage"
+		}],
+        "snippets": [{
+                "language": "asp (html)",
+                "path": "./snippets/snippets.json"
+        }]
+	}
+}

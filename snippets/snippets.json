@@ -1,0 +1,76 @@
+{
+/*
+	 // Place your snippets for HTML (ASP) here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+
+	"Get/Set property": {
+		"prefix": "prop",
+		"body": [
+			"Private m_${PropertyName} ",
+			"Public Property Get ${PropertyName} ",
+			"    ${PropertyName} = m_${PropertyName}", 
+			"End Property", 
+			"", 
+			"Public Property Let ${PropertyName}(value)", 
+			"    m_${PropertyName} = value ", 
+			"End Property ", 
+			"$1"
+		],
+		"description": "Get/Set property"
+	},
+	
+	"Public": {
+		"prefix": "public",
+		"body": [
+			"Public $0"
+		],
+		"description": "Public accessor"
+	},
+	
+	"Private": {
+		"prefix": "private",
+		"body": [
+			"Private $0"
+		],
+		"description": "Private accessor"
+	},
+	
+	"Sub": {
+		"prefix": "sub",
+		"body": [
+			"Sub ${Name}",
+			"    $0",
+			"End Sub"
+		],
+		"description": "Sub"
+	},
+	
+	"Function": {
+		"prefix": "func",
+		"body": [
+			"Function ${Name}",
+			"    $0",
+			"End Function"
+		],
+		"description": "Function"
+	},
+	
+	"Include": {
+		"prefix": "include",
+		"body": [
+			"<!--#include file=\"${FilePath}\"-->$0"
+		],
+		"description": "Include"
+	}
+}
